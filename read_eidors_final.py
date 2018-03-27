@@ -142,12 +142,3 @@ def read_eidors(filename, matlab_varname):
         mesh.setCellMarkers(boundary_numbers.astype(int))
 
     return mesh
-
-
-#-------- test the function --------------------------------------------------
-
-filename = 'A.mat'
-matlab_varname = "A"
-mesh = read_eidors(filename, matlab_varname)
-
-pg.show(mesh, mesh.cellMarkers())
