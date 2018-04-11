@@ -878,6 +878,8 @@ def exportHDF5Mesh(mesh, exportname, group='mesh', indices='cell_indices',
             out[grp][cells].attrs['celltype'] = np.string_('tetrahedron')
             out[grp][cells].attrs.create('partition', [0])
     return True
+  
+  
 def readEIDORSMesh(filename, matlab_varname,verbose=False):
     """Reads finite element model in EIDORS format and returns pygimli mesh.
 
